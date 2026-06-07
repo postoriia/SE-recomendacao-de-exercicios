@@ -36,111 +36,111 @@ public class SistemaEspecialistaExercicios {
         // --- EMAGRECIMENTO ---
 
         baseDeConhecimento.add(new Regra("Emagrecimento", "Iniciante", true,
-            "Caminhada na esteira (ritmo moderado), bicicleta ergom√©trica e hidrogin√°stica.",
-            "Como voc√™ √© iniciante, possui restri√ß√£o f√≠sica e deseja emagrecer, s√£o recomendados exerc√≠cios de baix√≠ssimo impacto para evitar les√µes, proteger suas articula√ß√µes e permitir a adapta√ß√£o gradual do seu organismo."));
+            "Caminhada na esteira (ritmo moderado), bicicleta ergomÈtrica e hidrogin·stica.",
+            "Como vocÍ È iniciante, possui restriÁ„o fÌsica e deseja emagrecer, s„o recomendados exercÌcios de baixÌssimo impacto para evitar lesıes, proteger suas articulaÁıes e permitir a adaptaÁ„o gradual do seu organismo."));
         
         baseDeConhecimento.add(new Regra("Emagrecimento", "Iniciante", false,
-            "Caminhada acelerada, circuitos funcionais leves e el√≠ptico.",
-            "Como voc√™ √© iniciante, n√£o possui restri√ß√µes e quer emagrecer, focamos em atividades aer√≥bicas cont√≠nuas para iniciar a ativa√ß√£o metab√≥lica e construir uma base de resist√™ncia cardiovascular com seguran√ßa."));
+            "Caminhada acelerada, circuitos funcionais leves e elÌptico.",
+            "Como vocÍ È iniciante, n„o possui restriÁıes e quer emagrecer, focamos em atividades aerÛbicas contÌnuas para iniciar a ativaÁ„o metabÛlica e construir uma base de resistÍncia cardiovascular com seguranÁa."));
         
-        baseDeConhecimento.add(new Regra("Emagrecimento", "Intermedi√°rio", true,
-            "Treino no el√≠ptico, nata√ß√£o e muscula√ß√£o em formato de circuito com cargas moderadas.",
-            "Dado seu n√≠vel intermedi√°rio com restri√ß√£o f√≠sica, o foco em emagrecimento exige otimiza√ß√£o do gasto cal√≥rico atrav√©s de exerc√≠cios de resist√™ncia muscular localizada e aer√≥bicos de baixo impacto articular."));
+        baseDeConhecimento.add(new Regra("Emagrecimento", "Intermedi·rio", true,
+            "Treino no elÌptico, nataÁ„o e musculaÁ„o em formato de circuito com cargas moderadas.",
+            "Dado seu nÌvel intermedi·rio com restriÁ„o fÌsica, o foco em emagrecimento exige otimizaÁ„o do gasto calÛrico atravÈs de exercÌcios de resistÍncia muscular localizada e aerÛbicos de baixo impacto articular."));
         
-        baseDeConhecimento.add(new Regra("Emagrecimento", "Intermedi√°rio", false,
-            "Corrida leve, Treino HIIT (Alta Intensidade) moderado e muscula√ß√£o funcional.",
-            "Por ser intermedi√°rio e livre de restri√ß√µes, seu corpo responde bem a varia√ß√µes de intensidade. O HIIT acelerar√° seu metabolismo, promovendo alto gasto cal√≥rico mesmo ap√≥s o t√©rmino do treino (efeito EPOC)."));
+        baseDeConhecimento.add(new Regra("Emagrecimento", "Intermedi·rio", false,
+            "Corrida leve, Treino HIIT (Alta Intensidade) moderado e musculaÁ„o funcional.",
+            "Por ser intermedi·rio e livre de restriÁıes, seu corpo responde bem a variaÁıes de intensidade. O HIIT acelerar· seu metabolismo, promovendo alto gasto calÛrico mesmo apÛs o tÈrmino do treino (efeito EPOC)."));
         
-        baseDeConhecimento.add(new Regra("Emagrecimento", "Avan√ßado", true,
-            "HIIT na bicicleta indoor, nata√ß√£o de alta intensidade e muscula√ß√£o em aparelhos guiados.",
-            "Sendo avan√ßado mas com restri√ß√£o, aplicamos est√≠mulos de alta intensidade metab√≥lica utilizando modalidades que isolam e protegem a sua limita√ß√£o mec√¢nica/articular espec√≠fica."));
+        baseDeConhecimento.add(new Regra("Emagrecimento", "AvanÁado", true,
+            "HIIT na bicicleta indoor, nataÁ„o de alta intensidade e musculaÁ„o em aparelhos guiados.",
+            "Sendo avanÁado mas com restriÁ„o, aplicamos estÌmulos de alta intensidade metabÛlica utilizando modalidades que isolam e protegem a sua limitaÁ„o mec‚nica/articular especÌfica."));
         
-        baseDeConhecimento.add(new Regra("Emagrecimento", "Avan√ßado", false,
+        baseDeConhecimento.add(new Regra("Emagrecimento", "AvanÁado", false,
             "Corrida de alta intensidade, Treino HIIT severo e Cross Training.",
-            "Como aluno avan√ßado e sem restri√ß√µes, o foco √© a m√°xima efici√™ncia na oxida√ß√£o de gordura atrav√©s de treinos altamente din√¢micos, que desafiam sua pot√™ncia aer√≥bica e anaer√≥bica de forma integrada."));
+            "Como aluno avanÁado e sem restriÁıes, o foco È a m·xima eficiÍncia na oxidaÁ„o de gordura atravÈs de treinos altamente din‚micos, que desafiam sua potÍncia aerÛbica e anaerÛbica de forma integrada."));
 
         // --- GANHO DE MASSA MUSCULAR (HIPERTROFIA) ---
 
         baseDeConhecimento.add(new Regra("Ganho de Massa", "Iniciante", true,
-            "Muscula√ß√£o focada em m√°quinas guiadas (Leg Press, Peck Deck), com cargas leves a moderadas.",
-            "Para iniciantes com restri√ß√£o focados em hipertrofia, as m√°quinas guiadas oferecem a estabilidade necess√°ria para isolar a musculatura alvo, gerando est√≠mulo de crescimento sem estressar a regi√£o limitada."));
+            "MusculaÁ„o focada em m·quinas guiadas (Leg Press, Peck Deck), com cargas leves a moderadas.",
+            "Para iniciantes com restriÁ„o focados em hipertrofia, as m·quinas guiadas oferecem a estabilidade necess·ria para isolar a musculatura alvo, gerando estÌmulo de crescimento sem estressar a regi„o limitada."));
         
         baseDeConhecimento.add(new Regra("Ganho de Massa", "Iniciante", false,
-            "Muscula√ß√£o b√°sica com foco em exerc√≠cios multiarticulares (Supino com barra, Agachamento Ta√ßa) e pesos livres adaptados.",
-            "Sendo iniciante sem restri√ß√µes, o objetivo √© o aprendizado motor e a coordena√ß√£o intra e intermuscular, assentando as bases de for√ßa para suportar futuras sobrecargas hipertr√≥ficas."));
+            "MusculaÁ„o b·sica com foco em exercÌcios multiarticulares (Supino com barra, Agachamento TaÁa) e pesos livres adaptados.",
+            "Sendo iniciante sem restriÁıes, o objetivo È o aprendizado motor e a coordenaÁ„o intra e intermuscular, assentando as bases de forÁa para suportar futuras sobrecargas hipertrÛficas."));
         
-        baseDeConhecimento.add(new Regra("Ganho de Massa", "Intermedi√°rio", true,
-            "Muscula√ß√£o combinando polias e m√°quinas com controle estrito de cad√™ncia e amplitude adaptada.",
-            "No n√≠vel intermedi√°rio com restri√ß√£o, induzimos a hipertrofia atrav√©s do aumento do 'tempo sob tens√£o' nas polias e cabos, o que gera grande estresse mec√¢nico no m√∫sculo sem sobrecarregar as articula√ß√µes fragilizadas."));
+        baseDeConhecimento.add(new Regra("Ganho de Massa", "Intermedi·rio", true,
+            "MusculaÁ„o combinando polias e m·quinas com controle estrito de cadÍncia e amplitude adaptada.",
+            "No nÌvel intermedi·rio com restriÁ„o, induzimos a hipertrofia atravÈs do aumento do 'tempo sob tens„o' nas polias e cabos, o que gera grande estresse mec‚nico no m˙sculo sem sobrecarregar as articulaÁıes fragilizadas."));
         
-        baseDeConhecimento.add(new Regra("Ganho de Massa", "Intermedi√°rio", false,
-            "Treino de for√ßa tradicional com pesos livres pesados (Divis√£o de treino ABC ou ABCD), com t√©cnicas de sobrecarga progressiva.",
-            "Sua condi√ß√£o intermedi√°ria livre de les√µes permite a manipula√ß√£o de cargas elevadas em pesos livres. Isso recruta mais unidades motoras, gerando o estresse tensional e microles√µes necess√°rias para a hipertrofia."));
+        baseDeConhecimento.add(new Regra("Ganho de Massa", "Intermedi·rio", false,
+            "Treino de forÁa tradicional com pesos livres pesados (Divis„o de treino ABC ou ABCD), com tÈcnicas de sobrecarga progressiva.",
+            "Sua condiÁ„o intermedi·ria livre de lesıes permite a manipulaÁ„o de cargas elevadas em pesos livres. Isso recruta mais unidades motoras, gerando o estresse tensional e microlesıes necess·rias para a hipertrofia."));
         
-        baseDeConhecimento.add(new Regra("Ganho de Massa", "Avan√ßado", true,
-            "Muscula√ß√£o com t√©cnicas avan√ßadas de isolamento (Drop-sets, Rest-pause) aplicadas estritamente em aparelhos biomecanicamente seguros.",
-            "Como atleta avan√ßado com restri√ß√£o, usamos estrat√©gias metab√≥licas intensas (como exaust√£o localizada) que quebram o plat√¥ muscular, mantendo o vetor de for√ßa longe da sua limita√ß√£o f√≠sica."));
+        baseDeConhecimento.add(new Regra("Ganho de Massa", "AvanÁado", true,
+            "MusculaÁ„o com tÈcnicas avanÁadas de isolamento (Drop-sets, Rest-pause) aplicadas estritamente em aparelhos biomecanicamente seguros.",
+            "Como atleta avanÁado com restriÁ„o, usamos estratÈgias metabÛlicas intensas (como exaust„o localizada) que quebram o platÙ muscular, mantendo o vetor de forÁa longe da sua limitaÁ„o fÌsica."));
         
-        baseDeConhecimento.add(new Regra("Ganho de Massa", "Avan√ßado", false,
-            "Treino de alta intensidade com pesos livres, t√©cnicas de falha conc√™ntrica (Bi-sets, Drop-sets) e foco em grandes grupamentos.",
-            "Para o n√≠vel avan√ßado sem restri√ß√µes, aplicamos o princ√≠pio da exaust√£o total. O uso de pesos livres associado a m√©todos de falha conc√™ntrica maximiza as respostas hormonais e a s√≠ntese proteica adaptativa."));
+        baseDeConhecimento.add(new Regra("Ganho de Massa", "AvanÁado", false,
+            "Treino de alta intensidade com pesos livres, tÈcnicas de falha concÍntrica (Bi-sets, Drop-sets) e foco em grandes grupamentos.",
+            "Para o nÌvel avanÁado sem restriÁıes, aplicamos o princÌpio da exaust„o total. O uso de pesos livres associado a mÈtodos de falha concÍntrica maximiza as respostas hormonais e a sÌntese proteica adaptativa."));
 
-        // --- CONDICIONAMENTO F√çSICO ---
+        // --- CONDICIONAMENTO FÕSICO ---
 
         baseDeConhecimento.add(new Regra("Condicionamento", "Iniciante", true,
-            "Caminhada plana cont√≠nua, ciclismo horizontal e alongamentos din√¢micos.",
-            "Iniciantes com restri√ß√£o buscando condicionamento devem focar na efici√™ncia card√≠aca de base. Exerc√≠cios c√≠clicos de baixa intensidade melhoram o VO2 m√°ximo sem gerar picos de sobrecarga mec√¢nica."));
+            "Caminhada plana contÌnua, ciclismo horizontal e alongamentos din‚micos.",
+            "Iniciantes com restriÁ„o buscando condicionamento devem focar na eficiÍncia cardÌaca de base. ExercÌcios cÌclicos de baixa intensidade melhoram o VO2 m·ximo sem gerar picos de sobrecarga mec‚nica."));
         
         baseDeConhecimento.add(new Regra("Condicionamento", "Iniciante", false,
-            "Trote intermitente (Caminha/Corre), calistenia b√°sica e circuitos de endurance.",
-            "Sendo iniciante e sem restri√ß√µes, o est√≠mulo misto (aer√≥bico e muscular leve) promove adapta√ß√µes cardiorrespirat√≥rias r√°pidas e melhora a resist√™ncia muscular localizada global."));
+            "Trote intermitente (Caminha/Corre), calistenia b·sica e circuitos de endurance.",
+            "Sendo iniciante e sem restriÁıes, o estÌmulo misto (aerÛbico e muscular leve) promove adaptaÁıes cardiorrespiratÛrias r·pidas e melhora a resistÍncia muscular localizada global."));
         
-        baseDeConhecimento.add(new Regra("Condicionamento", "Intermedi√°rio", true,
-            "Uso de Remo seco (erg√¥metro), nata√ß√£o e circuitos funcionais sem impacto.",
-            "Para intermedi√°rios com restri√ß√£o, o remo e a nata√ß√£o s√£o excelentes para o condicionamento cardio, pois exigem alta demanda de oxig√™nio sem gerar o impacto repetitivo do solo nas articula√ß√µes."));
+        baseDeConhecimento.add(new Regra("Condicionamento", "Intermedi·rio", true,
+            "Uso de Remo seco (ergÙmetro), nataÁ„o e circuitos funcionais sem impacto.",
+            "Para intermedi·rios com restriÁ„o, o remo e a nataÁ„o s„o excelentes para o condicionamento cardio, pois exigem alta demanda de oxigÍnio sem gerar o impacto repetitivo do solo nas articulaÁıes."));
         
-        baseDeConhecimento.add(new Regra("Condicionamento", "Intermedi√°rio", false,
+        baseDeConhecimento.add(new Regra("Condicionamento", "Intermedi·rio", false,
             "Corrida de rua ritmada, circuitos funcionais de alta intensidade e ciclismo outdoor.",
-            "Como intermedi√°rio sem restri√ß√µes, seu plano foca na expans√£o do limiar de lactato. Circuitos din√¢micos elevam a frequ√™ncia card√≠aca e treinam o corpo a se recuperar mais r√°pido de esfor√ßos intensos."));
+            "Como intermedi·rio sem restriÁıes, seu plano foca na expans„o do limiar de lactato. Circuitos din‚micos elevam a frequÍncia cardÌaca e treinam o corpo a se recuperar mais r·pido de esforÁos intensos."));
         
-        baseDeConhecimento.add(new Regra("Condicionamento", "Avan√ßado", true,
-            "Remo de alta intensidade, ciclismo indoor avan√ßado e simula√ß√£o de circuitos cardioprotetores.",
-            "Sendo avan√ßado com restri√ß√£o, desafiamos seu excelente sistema cardiovascular atrav√©s de treinos de pot√™ncia em ambientes controlados, garantindo rendimento de elite sem agravar limita√ß√µes."));
+        baseDeConhecimento.add(new Regra("Condicionamento", "AvanÁado", true,
+            "Remo de alta intensidade, ciclismo indoor avanÁado e simulaÁ„o de circuitos cardioprotetores.",
+            "Sendo avanÁado com restriÁ„o, desafiamos seu excelente sistema cardiovascular atravÈs de treinos de potÍncia em ambientes controlados, garantindo rendimento de elite sem agravar limitaÁıes."));
         
-        baseDeConhecimento.add(new Regra("Condicionamento", "Avan√ßado", false,
-            "Treinos de Sprint intervalados, pliometria (saltos) e treinos de pot√™ncia metab√≥lica total.",
-            "Para o n√≠vel avan√ßado e livre de restri√ß√µes, o foco √© a m√°xima performance esportiva, utilizando pliometria e tiros de velocidade para otimizar a pot√™ncia anaer√≥bica al√°tica e a agilidade."));
+        baseDeConhecimento.add(new Regra("Condicionamento", "AvanÁado", false,
+            "Treinos de Sprint intervalados, pliometria (saltos) e treinos de potÍncia metabÛlica total.",
+            "Para o nÌvel avanÁado e livre de restriÁıes, o foco È a m·xima performance esportiva, utilizando pliometria e tiros de velocidade para otimizar a potÍncia anaerÛbica al·tica e a agilidade."));
 
         // --- FLEXIBILIDADE ---
 
         baseDeConhecimento.add(new Regra("Flexibilidade", "Iniciante", true,
-            "Alongamentos est√°ticos passivos de grandes cadeias musculares e sess√µes leves de Fisiopilates.",
-            "Para iniciantes buscando flexibilidade com alguma restri√ß√£o f√≠sica, s√£o indicados alongamentos est√°ticos suaves e controlados para aliviar tens√µes e aumentar a amplitude de movimento protetiva."));
+            "Alongamentos est·ticos passivos de grandes cadeias musculares e sessıes leves de Fisiopilates.",
+            "Para iniciantes buscando flexibilidade com alguma restriÁ„o fÌsica, s„o indicados alongamentos est·ticos suaves e controlados para aliviar tensıes e aumentar a amplitude de movimento protetiva."));
         
         baseDeConhecimento.add(new Regra("Flexibilidade", "Iniciante", false,
-            "Alongamentos est√°ticos globais e posturas b√°sicas de Yoga.",
-            "Como iniciante sem restri√ß√µes, o foco est√° no relaxamento neuromuscular e alongamento de cadeias encurtadas (como posterior de coxa e coluna), melhorando a postura geral di√°ria."));
+            "Alongamentos est·ticos globais e posturas b·sicas de Yoga.",
+            "Como iniciante sem restriÁıes, o foco est· no relaxamento neuromuscular e alongamento de cadeias encurtadas (como posterior de coxa e coluna), melhorando a postura geral di·ria."));
         
-        baseDeConhecimento.add(new Regra("Flexibilidade", "Intermedi√°rio", true,
-            "Pilates cl√°ssico adaptado e t√©cnicas de facilita√ß√£o neuromuscular (FNP) com aux√≠lio.",
-            "Sendo intermedi√°rio com restri√ß√£o, o m√©todo de facilita√ß√£o ajuda a vencer o reflexo de estiramento com seguran√ßa, promovendo ganho de mobilidade respeitando as barreiras biol√≥gicas do seu corpo."));
+        baseDeConhecimento.add(new Regra("Flexibilidade", "Intermedi·rio", true,
+            "Pilates cl·ssico adaptado e tÈcnicas de facilitaÁ„o neuromuscular (FNP) com auxÌlio.",
+            "Sendo intermedi·rio com restriÁ„o, o mÈtodo de facilitaÁ„o ajuda a vencer o reflexo de estiramento com seguranÁa, promovendo ganho de mobilidade respeitando as barreiras biolÛgicas do seu corpo."));
         
-        baseDeConhecimento.add(new Regra("Flexibilidade", "Intermedi√°rio", false,
-            "Yoga din√¢mica (estilo Vinyasa) e rotinas de alongamentos ativos-din√¢micos.",
-            "No n√≠vel intermedi√°rio e livre, integramos for√ßa exc√™ntrica e flexibilidade. O movimento din√¢mico melhora a lubrifica√ß√£o articular e a elasticidade de tend√µes e f√°scias musculares."));
+        baseDeConhecimento.add(new Regra("Flexibilidade", "Intermedi·rio", false,
+            "Yoga din‚mica (estilo Vinyasa) e rotinas de alongamentos ativos-din‚micos.",
+            "No nÌvel intermedi·rio e livre, integramos forÁa excÍntrica e flexibilidade. O movimento din‚mico melhora a lubrificaÁ„o articular e a elasticidade de tendıes e f·scias musculares."));
         
-        baseDeConhecimento.add(new Regra("Flexibilidade", "Avan√ßado", true,
-            "T√©cnicas de alongamento por contra√ß√£o-relaxamento assistido e Yoga terap√™utica avan√ßada.",
-            "Para o perfil avan√ßado com restri√ß√£o, trabalhamos no limite seguro da amplitude de movimento, utilizando controle respirat√≥rio profundo para inibir o t√¥nus protetivo gerado pela restri√ß√£o f√≠sica."));
+        baseDeConhecimento.add(new Regra("Flexibilidade", "AvanÁado", true,
+            "TÈcnicas de alongamento por contraÁ„o-relaxamento assistido e Yoga terapÍutica avanÁada.",
+            "Para o perfil avanÁado com restriÁ„o, trabalhamos no limite seguro da amplitude de movimento, utilizando controle respiratÛrio profundo para inibir o tÙnus protetivo gerado pela restriÁ„o fÌsica."));
         
-        baseDeConhecimento.add(new Regra("Flexibilidade", "Avan√ßado", false,
-            "Yoga avan√ßada (Asanas complexos) e rotinas severas de flexibilidade (estilo gin√°stica art√≠stica).",
-            "Sendo avan√ßado sem restri√ß√µes, o treinamento visa a flexibilidade extrema e a hipermobilidade controlada, promovendo uma descompress√£o articular completa e elasticidade muscular total."));
+        baseDeConhecimento.add(new Regra("Flexibilidade", "AvanÁado", false,
+            "Yoga avanÁada (Asanas complexos) e rotinas severas de flexibilidade (estilo gin·stica artÌstica).",
+            "Sendo avanÁado sem restriÁıes, o treinamento visa a flexibilidade extrema e a hipermobilidade controlada, promovendo uma descompress„o articular completa e elasticidade muscular total."));
     }
 
     public void executarInferencia(String objetivo, String nivel, boolean restricao) {
         System.out.println("\n========================================================");
-        System.out.println("          PROCESSANDO REGRAS DE INFER√äNCIA...           ");
+        System.out.println("          PROCESSANDO REGRAS DE INFER NCIA...           ");
         System.out.println("========================================================");
         
         boolean regraDisparada = false;
@@ -148,9 +148,9 @@ public class SistemaEspecialistaExercicios {
         for (Regra regra : baseDeConhecimento) {
             if (regra.avaliar(objetivo, nivel, restricao)) {
                 System.out.println("\n[SISTEMA ESPECIALISTA INFORMA]:");
-                System.out.println("\n-> INDICA√á√ÉO DE EXERC√çCIOS:");
+                System.out.println("\n-> INDICA«√O DE EXERCÕCIOS:");
                 System.out.println(regra.recomendacao);
-                System.out.println("\n-> JUSTIFICATIVA FISIOL√ìGICA:");
+                System.out.println("\n-> JUSTIFICATIVA FISIOL”GICA:");
                 System.out.println(regra.justificativa);
                 regraDisparada = true;
                 break;
@@ -158,7 +158,7 @@ public class SistemaEspecialistaExercicios {
         }
 
         if (!regraDisparada) {
-            System.out.println("\n[ERRO]: N√£o foi poss√≠vel encontrar uma recomenda√ß√£o para a combina√ß√£o de fatos fornecida.");
+            System.out.println("\n[ERRO]: N„o foi possÌvel encontrar uma recomendaÁ„o para a combinaÁ„o de fatos fornecida.");
         }
         System.out.println("========================================================\n");
     }
@@ -168,7 +168,7 @@ public class SistemaEspecialistaExercicios {
         SistemaEspecialistaExercicios sistema = new SistemaEspecialistaExercicios();
 
         System.out.println("========================================================");
-        System.out.println("     SISTEMA ESPECIALISTA - PRESCRI√á√ÉO DE EXERC√çCIOS    ");
+        System.out.println("     SISTEMA ESPECIALISTA - PRESCRI«√O DE EXERCÕCIOS    ");
         System.out.println("========================================================");
 
         System.out.println("\nSelecione o seu OBJETIVO PRINCIPAL:\n");
@@ -176,7 +176,7 @@ public class SistemaEspecialistaExercicios {
         System.out.println("2 - Ganho de Massa");
         System.out.println("3 - Condicionamento");
         System.out.println("4 - Flexibilidade");
-        System.out.print("\nDigite o n√∫mero correspondente: ");
+        System.out.print("\nDigite o n˙mero correspondente: ");
         int opcaoObjetivo = scanner.nextInt();
         
         String objetivoFato = "";
@@ -190,41 +190,41 @@ public class SistemaEspecialistaExercicios {
             case 4: objetivoFato = "Flexibilidade";
                 break;
             default:
-                System.out.println("Op√ß√£o inv√°lida. Encerrando.");
+                System.out.println("OpÁ„o inv·lida. Encerrando.");
                 return;
         }
 
-        System.out.println("\nSelecione o seu N√çVEL DE EXPERI√äNCIA:\n");
+        System.out.println("\nSelecione o seu NÕVEL DE EXPERI NCIA:\n");
         System.out.println("1 - Iniciante");
-        System.out.println("2 - Intermedi√°rio");
-        System.out.println("3 - Avan√ßado");
-        System.out.print("/n Digite o n√∫mero correspondente: ");
+        System.out.println("2 - Intermedi·rio");
+        System.out.println("3 - AvanÁado");
+        System.out.print("/n Digite o n˙mero correspondente: ");
         int opcaoNivel = scanner.nextInt();
         
         String nivelFato = "";
         switch (opcaoNivel) {
             case 1: nivelFato = "Iniciante";
                 break;
-            case 2: nivelFato = "Intermedi√°rio";
+            case 2: nivelFato = "Intermedi·rio";
                 break;
-            case 3: nivelFato = "Avan√ßado";
+            case 3: nivelFato = "AvanÁado";
                 break;
             default:
-                System.out.println("Op√ß√£o inv√°lida. Encerrando.");
+                System.out.println("OpÁ„o inv·lida. Encerrando.");
                 return;
         }
 
-        System.out.println("\nVoc√™ possui alguma RESTRI√á√ÉO F√çSICA ou LES√ÉO? (Ex: problemas de joelho, coluna, etc.)");
+        System.out.println("\nVocÍ possui alguma RESTRI«√O FÕSICA ou LES√O? (Ex: problemas de joelho, coluna, etc.)");
         System.out.println("1 - Sim");
-        System.out.println("2 - N√£o");
-        System.out.print("\nDigite o n√∫mero correspondente: ");
+        System.out.println("2 - N„o");
+        System.out.print("\nDigite o n˙mero correspondente: ");
         int opcaoRestricao = scanner.nextInt();
         
         boolean restricaoFato = false;
         if (opcaoRestricao == 1) {
             restricaoFato = true;
         } else if (opcaoRestricao != 2) {
-            System.out.println("Op√ß√£o inv√°lida. Encerrando.");
+            System.out.println("OpÁ„o inv·lida. Encerrando.");
             return;
         }
 
