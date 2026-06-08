@@ -11,10 +11,12 @@ import service.MotorInferencia;
 public class main {
     public static void main(String[] args) {
         // fix do gemini pra erro de formatação UTF
-        // Força o terminal do Windows (cmd) a usar a página de código UTF-8 (60001) antes de rodar
+        // Força o terminal do Windows (cmd) a usar a página de código UTF-8 (60001)
+        // antes de rodar
         try {
             new ProcessBuilder("cmd", "/c", "chcp 65001").inheritIO().start().waitFor();
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
 
         // Configura as saídas e entradas do Java explicitamente para UTF-8
         System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
@@ -33,7 +35,8 @@ public class main {
             String entrada = scanner.nextLine().trim();
             try {
                 generoOpcao = Integer.parseInt(entrada);
-                if (generoOpcao == 1 || generoOpcao == 2) break;
+                if (generoOpcao == 1 || generoOpcao == 2)
+                    break;
                 System.out.println("[ERRO]: Opção inválida! Digite apenas 1 ou 2.");
             } catch (NumberFormatException e) {
                 System.out.println("[ERRO]: Entrada inválida! Não digite letras ou símbolos. Use apenas números.");
@@ -52,13 +55,15 @@ public class main {
             String entrada = scanner.nextLine().trim();
             try {
                 objOpcao = Integer.parseInt(entrada);
-                if (objOpcao >= 1 && objOpcao <= 4) break;
+                if (objOpcao >= 1 && objOpcao <= 4)
+                    break;
                 System.out.println("[ERRO]: Opção inválida! Escolha de 1 a 4.");
             } catch (NumberFormatException e) {
                 System.out.println("[ERRO]: Entrada inválida! Por favor, digite um número.");
             }
         }
-        String objetivo = (objOpcao == 1) ? "Emagrecimento" : (objOpcao == 2) ? "Ganho de Massa" : (objOpcao == 3) ? "Condicionamento" : "Flexibilidade";
+        String objetivo = (objOpcao == 1) ? "Emagrecimento"
+                : (objOpcao == 2) ? "Ganho de Massa" : (objOpcao == 3) ? "Condicionamento" : "Flexibilidade";
 
         int nivelOpcao = 0;
         while (true) {
@@ -68,7 +73,8 @@ public class main {
             String entrada = scanner.nextLine().trim();
             try {
                 nivelOpcao = Integer.parseInt(entrada);
-                if (nivelOpcao >= 1 && nivelOpcao <= 3) break;
+                if (nivelOpcao >= 1 && nivelOpcao <= 3)
+                    break;
                 System.out.println("[ERRO]: Opção inválida! Escolha de 1 a 3.");
             } catch (NumberFormatException e) {
                 System.out.println("[ERRO]: Entrada inválida! Por favor, digite um número.");
@@ -77,8 +83,10 @@ public class main {
         String nivel = (nivelOpcao == 1) ? "Iniciante" : (nivelOpcao == 3) ? "Avançado" : "Intermediário";
 
         List<Integer> restricoesEscolhidas = new ArrayList<>();
+        int restricoesCounter = 0;
         while (true) {
-            System.out.println("\nVocê possui alguma RESTRIÇÃO FÍSICA ou LESÃO? (Ex: problemas de joelho, coluna, etc.):");
+            System.out.println(
+                    "\nVocê possui alguma RESTRIÇÃO FÍSICA ou LESÃO? (Ex: problemas de joelho, coluna, etc.):");
             System.out.println("1 - Nenhuma (Sem restrições/Saudável)");
             System.out.println("2 - Hérnia de Disco / Dor Lombar Crônica");
             System.out.println("3 - Condromalácia Patelar / Dor no Joelho");
@@ -90,7 +98,7 @@ public class main {
             System.out.println("9 - Obesidade Grau II ou III");
             System.out.println("10 - [CONCLUÍDO] Gerar treino adaptado");
             System.out.print("Escolha uma opção por vez: ");
-            
+
             String entrada = scanner.nextLine().trim();
             int esc = 0;
             try {
@@ -100,26 +108,36 @@ public class main {
                 continue;
             }
 
+            if (restricoesCounter == 3) {
+                System.out.println("\n======================================================================");
+                System.out.println("   [ALERTA CLÍNICO] O sistema não gera treinos automatizados para 3 ou mais lesões/riscos.");
+                System.out.println("   É recomendado a consulta de um médico especialista para um acompanhamento mais preciso.");
+                System.out.println("======================================================================");
+                return;
+            }
+
             if (esc == 1) {
                 restricoesEscolhidas.clear();
                 restricoesEscolhidas.add(1);
                 break;
             }
             if (esc == 10) {
-                if (restricoesEscolhidas.isEmpty()) restricoesEscolhidas.add(1);
+                if (restricoesEscolhidas.isEmpty())
+                    restricoesEscolhidas.add(1);
                 break;
             }
             if (esc >= 2 && esc <= 9) {
                 if (!restricoesEscolhidas.contains(esc)) {
                     restricoesEscolhidas.add(esc);
                     System.out.println("-> Restrição cadastrada!");
+
+                    restricoesCounter += 1;
                 } else {
                     System.out.println("-> Esta restrição já foi adicionada anteriormente.");
                 }
             } else {
                 System.out.println("[ERRO]: Opção fora do limite permitido (1 a 10).");
             }
-
         }
 
         PerfilUsuario usuario = new PerfilUsuario(genero, objetivo, nivel, restricoesEscolhidas);
@@ -130,8 +148,8 @@ public class main {
         System.out.println("======================================================================");
         System.out.println("PACIENTE/ALUNO: " + usuario.getGenero() + "  |  NÍVEL: " + usuario.getNivel());
         System.out.println("OBJETIVO SISTÊMICO: " + usuario.getObjetivo());
-        
-        String[] diasSemana = {"SEGUNDA-FEIRA", "TERÇA-FEIRA", "QUARTA-FEIRA", "QUINTA-FEIRA", "SEXTA-FEIRA"};
+
+        String[] diasSemana = { "SEGUNDA-FEIRA", "TERÇA-FEIRA", "QUARTA-FEIRA", "QUINTA-FEIRA", "SEXTA-FEIRA" };
         List<List<Exercicio>> cronogramaFinal = motor.getCronograma();
 
         for (int d = 0; d < 5; d++) {
@@ -139,7 +157,8 @@ public class main {
             List<Exercicio> exerciciosDoDia = cronogramaFinal.get(d);
             for (int e = 0; e < exerciciosDoDia.size(); e++) {
                 Exercicio ex = exerciciosDoDia.get(e);
-                System.out.println("   -> Ex " + (e + 1) + ": " + ex.getNome() + " | " + ex.getSeries() + " x " + ex.getReps() + " | Descanso: " + ex.getDescanso());
+                System.out.println("   -> Ex " + (e + 1) + ": " + ex.getNome() + " | " + ex.getSeries() + " x "
+                        + ex.getReps() + " | Descanso: " + ex.getDescanso());
             }
         }
 
