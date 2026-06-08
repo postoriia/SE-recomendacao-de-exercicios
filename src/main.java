@@ -1,5 +1,4 @@
 import java.io.PrintStream;
-import java.nio.channels.Pipe.SourceChannel;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +10,7 @@ import service.MotorInferencia;
 
 public class main {
     public static void main(String[] args) {
+        // fix do gemini pra erro de formatação UTF
         // Força o terminal do Windows (cmd) a usar a página de código UTF-8 (60001) antes de rodar
         try {
             new ProcessBuilder("cmd", "/c", "chcp 65001").inheritIO().start().waitFor();
@@ -24,9 +24,6 @@ public class main {
         System.out.println("   SISTEMA ESPECIALISTA CLÍNICO - ARQUITETURA DE REGRAS V3      ");
         System.out.println("=================================================================");
 
-        // --- CONDICIONAMENTO FÍSICO ---
-
-        // 1. Entrada Gênero
         int generoOpcao = 0;
         while (true) {
             System.out.println("\nSelecione o GÊNERO biológico:");
@@ -44,7 +41,6 @@ public class main {
         }
         String genero = (generoOpcao == 1) ? "Mulher" : "Homem";
 
-        // 2. Entrada Objetivo
         int objOpcao = 0;
         while (true) {
             System.out.println("\nSelecione o seu OBJETIVO PRINCIPAL:");
@@ -64,7 +60,6 @@ public class main {
         }
         String objetivo = (objOpcao == 1) ? "Emagrecimento" : (objOpcao == 2) ? "Ganho de Massa" : (objOpcao == 3) ? "Condicionamento" : "Flexibilidade";
 
-        // 3. Entrada Nível
         int nivelOpcao = 0;
         while (true) {
             System.out.println("\nSelecione o seu NÍVEL DE EXPERIÊNCIA:");
@@ -81,7 +76,6 @@ public class main {
         }
         String nivel = (nivelOpcao == 1) ? "Iniciante" : (nivelOpcao == 3) ? "Avançado" : "Intermediário";
 
-        // 4. Entrada Restrições
         List<Integer> restricoesEscolhidas = new ArrayList<>();
         while (true) {
             System.out.println("\nVocê possui alguma RESTRIÇÃO FÍSICA ou LESÃO? (Ex: problemas de joelho, coluna, etc.):");
@@ -128,7 +122,6 @@ public class main {
 
         }
 
-        // Instanciação e exibição das indicações de exercícios
         PerfilUsuario usuario = new PerfilUsuario(genero, objetivo, nivel, restricoesEscolhidas);
         MotorInferencia motor = new MotorInferencia(usuario);
 
