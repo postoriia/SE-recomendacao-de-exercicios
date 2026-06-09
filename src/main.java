@@ -85,8 +85,7 @@ public class main {
         List<Integer> restricoesEscolhidas = new ArrayList<>();
         int restricoesCounter = 0;
         while (true) {
-            System.out.println(
-                    "\nVocê possui alguma RESTRIÇÃO FÍSICA ou LESÃO? (Ex: problemas de joelho, coluna, etc.):");
+            System.out.println("\nVocê possui alguma RESTRIÇÃO FÍSICA ou LESÃO? (Ex: problemas de joelho, coluna, etc.):");
             System.out.println("1 - Nenhuma (Sem restrições/Saudável)");
             System.out.println("2 - Hérnia de Disco / Dor Lombar Crônica");
             System.out.println("3 - Condromalácia Patelar / Dor no Joelho");
@@ -117,7 +116,6 @@ public class main {
             }
 
             if (esc == 1) {
-                restricoesEscolhidas.clear();
                 restricoesEscolhidas.add(1);
                 break;
             }
